@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FilePreview=[[UIWebView alloc]initWithFrame:CGRectMake(0,100, 450, 600)];
+    FilePreview.delegate=self;
+    [self.view addSubview:FilePreview];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -35,12 +39,16 @@
     
     if (controller.documentPickerMode == UIDocumentPickerModeImport) {
         
-        NSURLRequest* request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
-        [FilePreview loadRequest:request];
+       NSURLRequest* request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
+      [FilePreview loadRequest:request];
+      [FilePreview reload];
 
         
         
     }
 }
-
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+    NSLog(@"%@",error);
+}
 @end

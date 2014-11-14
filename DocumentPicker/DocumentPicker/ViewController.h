@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIDocumentMenuDelegate,UIDocumentPickerDelegate>
+@interface ViewController : UIViewController<UIDocumentMenuDelegate,UIDocumentPickerDelegate,UIWebViewDelegate>
 {
-    IBOutlet UIWebView *FilePreview;
+     UIWebView *FilePreview;
 }
 -(IBAction)enableDocumentPicker:(id)sender;
 @end

@@ -14,6 +14,9 @@
 		C5092FE31A16079C00FFB540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5092FE21A16079C00FFB540 /* Images.xcassets */; };
 		C5092FE61A16079C00FFB540 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5092FE41A16079C00FFB540 /* LaunchScreen.xib */; };
 		C5092FF21A16079C00FFB540 /* DocumentPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5092FF11A16079C00FFB540 /* DocumentPickerTests.m */; };
+		C50CD1B01A160E5400509D99 /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50CD1AF1A160E5400509D99 /* DocumentPickerViewController.m */; };
+		C50CD1B21A160E5400509D99 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50CD1B11A160E5400509D99 /* MainInterface.storyboard */; };
+		C50CD1C41A160E5400509D99 /* DocPicker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C50CD1A91A160E5400509D99 /* DocPicker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = C5092FD11A16079C00FFB540;
 			remoteInfo = DocumentPicker;
 		};
+		C50CD1C21A160E5400509D99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5092FCA1A16079C00FFB540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C50CD1A81A160E5400509D99;
+			remoteInfo = DocPicker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C50CD1CB1A160E5400509D99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C50CD1C41A160E5400509D99 /* DocPicker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C5092FD21A16079C00FFB540 /* DocumentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +64,17 @@
 		C5092FEB1A16079C00FFB540 /* DocumentPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5092FF01A16079C00FFB540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5092FF11A16079C00FFB540 /* DocumentPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerTests.m; sourceTree = "<group>"; };
+		C50CD1A91A160E5400509D99 /* DocPicker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocPicker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50CD1AC1A160E5400509D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C50CD1AD1A160E5400509D99 /* DocPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocPicker.entitlements; sourceTree = "<group>"; };
+		C50CD1AE1A160E5400509D99 /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		C50CD1AF1A160E5400509D99 /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		C50CD1B11A160E5400509D99 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		C50CD1BA1A160E5400509D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C50CD1BB1A160E5400509D99 /* DocPickerFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocPickerFileProvider.entitlements; sourceTree = "<group>"; };
+		C50CD1BC1A160E5400509D99 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		C50CD1BD1A160E5400509D99 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		C50CD1CC1A160F6C00509D99 /* DocumentPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentPicker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C50CD1A61A160E5400509D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +107,8 @@
 			children = (
 				C5092FD41A16079C00FFB540 /* DocumentPicker */,
 				C5092FEE1A16079C00FFB540 /* DocumentPickerTests */,
+				C50CD1AA1A160E5400509D99 /* DocPicker */,
+				C50CD1B81A160E5400509D99 /* DocPickerFileProvider */,
 				C5092FD31A16079C00FFB540 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +118,7 @@
 			children = (
 				C5092FD21A16079C00FFB540 /* DocumentPicker.app */,
 				C5092FEB1A16079C00FFB540 /* DocumentPickerTests.xctest */,
+				C50CD1A91A160E5400509D99 /* DocPicker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +126,7 @@
 		C5092FD41A16079C00FFB540 /* DocumentPicker */ = {
 			isa = PBXGroup;
 			children = (
+				C50CD1CC1A160F6C00509D99 /* DocumentPicker.entitlements */,
 				C5092FD91A16079C00FFB540 /* AppDelegate.h */,
 				C5092FDA1A16079C00FFB540 /* AppDelegate.m */,
 				C5092FDC1A16079C00FFB540 /* ViewController.h */,
@@ -119,6 +165,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C50CD1AA1A160E5400509D99 /* DocPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C50CD1AE1A160E5400509D99 /* DocumentPickerViewController.h */,
+				C50CD1AF1A160E5400509D99 /* DocumentPickerViewController.m */,
+				C50CD1B11A160E5400509D99 /* MainInterface.storyboard */,
+				C50CD1AB1A160E5400509D99 /* Supporting Files */,
+			);
+			path = DocPicker;
+			sourceTree = "<group>";
+		};
+		C50CD1AB1A160E5400509D99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C50CD1AC1A160E5400509D99 /* Info.plist */,
+				C50CD1AD1A160E5400509D99 /* DocPicker.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C50CD1B81A160E5400509D99 /* DocPickerFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				C50CD1BC1A160E5400509D99 /* FileProvider.h */,
+				C50CD1BD1A160E5400509D99 /* FileProvider.m */,
+				C50CD1B91A160E5400509D99 /* Supporting Files */,
+			);
+			path = DocPickerFileProvider;
+			sourceTree = "<group>";
+		};
+		C50CD1B91A160E5400509D99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C50CD1BA1A160E5400509D99 /* Info.plist */,
+				C50CD1BB1A160E5400509D99 /* DocPickerFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +214,12 @@
 				C5092FCE1A16079C00FFB540 /* Sources */,
 				C5092FCF1A16079C00FFB540 /* Frameworks */,
 				C5092FD01A16079C00FFB540 /* Resources */,
+				C50CD1CB1A160E5400509D99 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C50CD1C31A160E5400509D99 /* PBXTargetDependency */,
 			);
 			name = DocumentPicker;
 			productName = DocumentPicker;
@@ -157,6 +244,23 @@
 			productReference = C5092FEB1A16079C00FFB540 /* DocumentPickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C50CD1A81A160E5400509D99 /* DocPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C50CD1CA1A160E5400509D99 /* Build configuration list for PBXNativeTarget "DocPicker" */;
+			buildPhases = (
+				C50CD1A51A160E5400509D99 /* Sources */,
+				C50CD1A61A160E5400509D99 /* Frameworks */,
+				C50CD1A71A160E5400509D99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocPicker;
+			productName = DocPicker;
+			productReference = C50CD1A91A160E5400509D99 /* DocPicker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +272,28 @@
 				TargetAttributes = {
 					C5092FD11A16079C00FFB540 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = U36B7685GW;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					C5092FEA1A16079C00FFB540 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = C5092FD11A16079C00FFB540;
+					};
+					C50CD1A81A160E5400509D99 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = U36B7685GW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -190,6 +312,7 @@
 			targets = (
 				C5092FD11A16079C00FFB540 /* DocumentPicker */,
 				C5092FEA1A16079C00FFB540 /* DocumentPickerTests */,
+				C50CD1A81A160E5400509D99 /* DocPicker */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +332,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50CD1A71A160E5400509D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50CD1B21A160E5400509D99 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +364,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C50CD1A51A160E5400509D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50CD1B01A160E5400509D99 /* DocumentPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = C5092FD11A16079C00FFB540 /* DocumentPicker */;
 			targetProxy = C5092FEC1A16079C00FFB540 /* PBXContainerItemProxy */;
+		};
+		C50CD1C31A160E5400509D99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C50CD1A81A160E5400509D99 /* DocPicker */;
+			targetProxy = C50CD1C21A160E5400509D99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,9 +487,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocumentPicker/DocumentPicker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DocumentPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -353,9 +501,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocumentPicker/DocumentPicker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DocumentPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -393,6 +545,38 @@
 			};
 			name = Release;
 		};
+		C50CD1C51A160E5400509D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocPicker/DocPicker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C50CD1C61A160E5400509D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocPicker/DocPicker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DocPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,12 +596,22 @@
 				C5092FF71A16079C00FFB540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5092FF81A16079C00FFB540 /* Build configuration list for PBXNativeTarget "DocumentPickerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5092FF91A16079C00FFB540 /* Debug */,
 				C5092FFA1A16079C00FFB540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C50CD1CA1A160E5400509D99 /* Build configuration list for PBXNativeTarget "DocPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C50CD1C51A160E5400509D99 /* Debug */,
+				C50CD1C61A160E5400509D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
